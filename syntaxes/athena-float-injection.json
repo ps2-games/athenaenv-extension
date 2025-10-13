@@ -1,0 +1,10 @@
+{
+  "scopeName": "athena.floats.injection",
+  "injectionSelector": "L:source.js -comment -string, L:source.jsx -comment -string",
+  "patterns": [
+    {
+      "name": "constant.numeric",
+      "match": "(?<![A-Za-z0-9_$])(?:\\d[\\d_]*(?:\\.\\d[\\d_]*)?|\\.\\d[\\d_]*)(?:[eE][+\\-]?\\d[\\d_]*)?f(?![A-Za-z0-9_$])"
+    }
+  ]
+}
