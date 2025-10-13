@@ -1,0 +1,35 @@
+{
+  "name": "athenaenv-extension",
+  "displayName": "AthenaEnv Extension (JS)",
+  "description": "Allows trailing 'f' on decimal numbers in JavaScript (C#-style floats) when workspace has athena.ini.",
+  "version": "0.0.1",
+  "publisher": "your-name-or-org",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": ["Linters", "Programming Languages"],
+  "activationEvents": [
+    "onStartupFinished",
+    "workspaceContains:athena.ini"
+  ],
+  "extensionKind": ["workspace"],
+  "main": "./src/extension.js",
+  "contributes": {
+    "typescriptServerPlugins": [
+      {
+        "name": "athenaenv-extension-plugin",
+        "enableForWorkspaceTypeScriptVersions": true,
+        "languages": ["javascript", "javascriptreact"],
+        "path": "."
+      }
+    ]
+  },
+  "files": [
+    "src",
+    "node_modules/athenaenv-extension-plugin",
+    "README.md",
+    ".vscodeignore",
+    "LICENSE"
+  ],
+  "license": "MIT"
+}
