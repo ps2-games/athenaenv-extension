@@ -35,10 +35,7 @@
   "files": [
     "src",
     "node_modules/athenaenv-extension-plugin",
-    "syntaxes",
-    "README.md",
-    ".vscodeignore",
-    "LICENSE"
+    "syntaxes"
   ],
   "license": "MIT"
 }
