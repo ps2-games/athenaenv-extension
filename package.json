@@ -35,7 +35,16 @@
   "files": [
     "src",
     "node_modules/athenaenv-extension-plugin",
-    "syntaxes"
+    "syntaxes",
+    "README.md",
+    "LICENSE"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CarterTMDev/athenaenv-extension.git"
+  },
+  "scripts": {
+    "build": "vsce package -o ./builds/"
+  }
 }
