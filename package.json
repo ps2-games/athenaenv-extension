@@ -27,7 +27,7 @@
       {
         "name": "athenaenv-extension-plugin",
         "enableForWorkspaceTypeScriptVersions": true,
-        "languages": ["javascript", "javascriptreact"]
+        "languages": ["javascript"]
       }
     ]
   },
